@@ -1,7 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>cdorst</Authors>
+    <Description>Helper for staging and committing git changes</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>CDorst.DevOps.VersionControl.Functions.AddAndCommitGitChanges</PackageId>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CDorst.DevOps.VersionControl.Functions.RunGitAddCommand" Version="1.0.0" />
+    <PackageReference Include="CDorst.DevOps.VersionControl.Functions.RunGitCommitCommand" Version="1.0.0" />
+    <PackageReference Include="CDorst.DevOps.VersionControl.Functions.SetGitRepositoryUserInfo" Version="1.0.0" />
+  </ItemGroup>
 
 </Project>
