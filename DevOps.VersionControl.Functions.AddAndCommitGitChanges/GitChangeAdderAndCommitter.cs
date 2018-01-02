@@ -1,4 +1,5 @@
-﻿using static DevOps.VersionControl.Functions.RunGitAddCommand.GitAddCommandRunner;
+﻿using DevOps.VersionControl.Structures.GitCommitUser;
+using static DevOps.VersionControl.Functions.RunGitAddCommand.GitAddCommandRunner;
 using static DevOps.VersionControl.Functions.RunGitCommitCommand.GitCommitCommandRunner;
 using static DevOps.VersionControl.Functions.SetGitRepositoryUserInfo.UserInfoSetter;
 
